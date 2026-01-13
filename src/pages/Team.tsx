@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const teamMembers = [
   {
@@ -60,12 +61,14 @@ const Team = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 hero-gradient text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-up">
-            Meet Our Team
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto animate-fade-up-delay-1">
-            Dedicated individuals working together to strengthen democracy and empower communities across South Africa.
-          </p>
+          <ScrollReveal>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Meet Our Team
+            </h1>
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+              Dedicated individuals working together to strengthen democracy and empower communities across South Africa.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -74,30 +77,28 @@ const Team = () => {
         <div className="container mx-auto px-4">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <div 
-                key={member.name}
-                className="bg-card rounded-xl overflow-hidden card-elevated group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+              <ScrollReveal key={member.name} delay={index * 100}>
+                <div className="bg-card rounded-xl overflow-hidden card-elevated group h-full">
+                  <div className="aspect-square overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-bold text-lg text-foreground mb-1">
+                      {member.name}
+                    </h3>
+                    <p className="text-primary font-medium text-sm mb-3">
+                      {member.role}
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-lg text-foreground mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-primary font-medium text-sm mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -106,18 +107,20 @@ const Team = () => {
       {/* Join the Team CTA */}
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
-            Join Our Movement
-          </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-            We're always looking for passionate individuals who share our vision for a more engaged and empowered citizenry.
-          </p>
-          <a 
-            href="#contact" 
-            className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-          >
-            Get In Touch
-          </a>
+          <ScrollReveal>
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Join Our Movement
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+              We're always looking for passionate individuals who share our vision for a more engaged and empowered citizenry.
+            </p>
+            <a 
+              href="#contact" 
+              className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              Get In Touch
+            </a>
+          </ScrollReveal>
         </div>
       </section>
 
