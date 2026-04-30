@@ -2,7 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo-removebg-preview.png";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +22,11 @@ const Header = () => {
     { label: "Impact", href: isHomePage ? "#impact" : "/#impact" },
     { label: "Contact", href: isHomePage ? "#contact" : "/#contact" },
   ];
+  const aboutLinks = [
+  { label: "Who We Are", href: isHomePage ? "#about" : "/#about" },
+  { label: "Our Mission", href: isHomePage ? "#mission" : "/#mission" },
+  { label: "Our Vision", href: isHomePage ? "#vision" : "/#vision" },
+];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
