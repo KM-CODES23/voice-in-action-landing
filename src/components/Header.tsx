@@ -3,12 +3,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo-removebg-preview.png";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,16 +11,11 @@ const Header = () => {
 
   const navLinks = [
     { label: "About", href: isHomePage ? "#about" : "/#about" },
-    { label: "Initiatives", href: isHomePage ? "#initiatives" : "/#initiatives" },
-    { label: "Team", href: "/team", isRoute: true },
+    { label: "How We Work", href: isHomePage ? "#initiatives" : "/#initiatives" },
     { label: "Impact", href: isHomePage ? "#impact" : "/#impact" },
+    { label: "Team", href: "/team", isRoute: true },
     { label: "Contact", href: isHomePage ? "#contact" : "/#contact" },
   ];
-  const aboutLinks = [
-  { label: "Who We Are", href: isHomePage ? "#about" : "/#about" },
-  { label: "Our Mission", href: isHomePage ? "#mission" : "/#mission" },
-  { label: "Our Vision", href: isHomePage ? "#vision" : "/#vision" },
-];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -62,8 +51,10 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" size="lg">
+            <Button variant="default" size="lg" asChild>
+              <a href={isHomePage ? "#contact" : "/#contact"}>
               Get Involved
+              </a>
             </Button>
           </div>
 
@@ -105,8 +96,10 @@ const Header = () => {
                   </a>
                 )
               ))}
-              <Button variant="default" size="lg" className="mt-2">
-                Get Involved
+              <Button variant="default" size="lg" className="mt-2" asChild>
+                <a href={isHomePage ? "#contact" : "/#contact"} onClick={() => setIsMenuOpen(false)}>
+                  Get Involved
+                </a>
               </Button>
             </div>
           </nav>

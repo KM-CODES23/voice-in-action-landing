@@ -1,32 +1,50 @@
-import { Megaphone, Vote, BookOpen, Users2 } from "lucide-react";
+﻿import { Database, FileSearch, GraduationCap, Megaphone, ShieldCheck, Users2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const Initiatives = () => {
   const initiatives = [
     {
-      icon: Vote,
-      title: "Voter Registration Drives",
-      description: "We run community-wide voter registration campaigns to ensure every eligible citizen can exercise their right to vote.",
-      action: "Register Now",
+      icon: FileSearch,
+      title: "Independent Investigations",
+      description:
+        "We investigate reports of alleged corruption and service delivery failures, focusing on cases with the most severe impact on society.",
+      action: "Report Concerns",
     },
     {
       icon: Megaphone,
-      title: "Town Hall Forums",
-      description: "Monthly forums where community members can directly engage with local officials and voice their concerns.",
-      action: "View Schedule",
-    },
-    {
-      icon: BookOpen,
-      title: "Civic Education",
-      description: "Workshops and resources to help citizens understand local government processes and how to participate effectively.",
-      action: "Learn More",
+      title: "Exposure",
+      description:
+        "We partner with mainstream and community media to ensure corruption and service delivery failures are exposed to the public.",
+      action: "Speak Up",
     },
     {
       icon: Users2,
-      title: "Community Organizing",
-      description: "Training and support for residents who want to lead change initiatives in their neighborhoods.",
-      action: "Get Started",
+      title: "Mobilization",
+      description:
+        "We build campaigns that involve the public, community groups, and trade unions to stand against corruption.",
+      action: "Join Campaigns",
+    },
+    {
+      icon: GraduationCap,
+      title: "Safety and Education",
+      description:
+        "Through the CODESA ONE model, we advocate for schools where children arrive to learn, not to survive.",
+      action: "Protect Learners",
+    },
+    {
+      icon: Database,
+      title: "School Oversight Database",
+      description:
+        "VIA is building a data-driven response to track dropout rates, pregnancy trends, service delivery failures, safety risks, and schools in need of support.",
+      action: "Track Issues",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Human Rights Protection",
+      description:
+        "We hand investigative findings to relevant authorities, monitor case progress, and work to protect the beneficiaries of public services.",
+      action: "Create Accountability",
     },
   ];
 
@@ -37,11 +55,11 @@ const Initiatives = () => {
           <div className="text-center mb-16">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">What We Do</span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">
-              Our Key Initiatives
+              How We Work
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From voter registration to community organizing, we provide the tools 
-              and platforms for meaningful civic participation.
+              VIA turns community complaints into action through investigation,
+              exposure, mobilization, education, and direct accountability.
             </p>
           </div>
         </ScrollReveal>
@@ -57,8 +75,8 @@ const Initiatives = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-foreground mb-2">{initiative.title}</h3>
                     <p className="text-muted-foreground mb-4">{initiative.description}</p>
-                    <Button variant="link" className="p-0 h-auto text-primary">
-                      {initiative.action} →
+                    <Button variant="link" className="p-0 h-auto text-primary" asChild>
+                      <a href="#contact">{initiative.action} -&gt;</a>
                     </Button>
                   </div>
                 </div>
