@@ -1,58 +1,157 @@
-# Welcome to your Lovable project
+# Voice In Action
 
-## Project info
+Voice In Action (VIA) is a civic advocacy and accountability website created for the Khutsong and Carletonville community. The site promotes transparency, service delivery accountability, anti-corruption advocacy, and public engagement through a clear and modern landing page experience.
 
+This project presents VIA as an independent, non-profit watchdog organization committed to investigating service delivery complaints, exposing corruption, protecting community rights, and promoting fairness, accountability, and administrative justice.
 
-## How can I edit this code?
+## Overview
 
-There are several ways of editing your application.
+The website is designed to:
 
+- Introduce the Voice In Action mission and values
+- Explain how the organization investigates complaints and protects communities
+- Showcase key initiatives such as independent investigations, public exposure, mobilization, and school safety oversight
+- Highlight the organization’s impact in restoring accountability and trust
+- Encourage volunteers, supporters, and community members to get involved
+- Provide contact details and local outreach information
 
+## Key Sections
 
-**Use your preferred IDE**
+The landing page includes:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Hero section with strong civic call-to-action messaging
+- About section explaining the mission, vision, and purpose of VIA
+- Initiatives section covering key community and accountability programs
+- Impact section highlighting how VIA turns complaints into solutions
+- Volunteer / get involved call-to-action section
+- Team page with leadership and volunteer structure information
+- About Us page with VIA’s values and organizational principles
+- Footer with contact details and location information
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Mission and Purpose
 
-Follow these steps:
+Voice In Action exists to:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Investigate service delivery complaints
+- Expose corruption and misconduct
+- Protect the rights of residents and communities
+- Promote fairness, transparency, and accountability
+- Build public trust through evidence-based action
+- Support communities in accessing justice and responsible governance
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Core Values
 
-# Step 3: Install the necessary dependencies.
-npm i
+VIA is guided by:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Independence
+- Impartiality and fairness
+- Accessibility
+- Professionalism and accountability
+- Community protection and public trust
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies Used
 
 This project is built with:
 
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
+- React Router
+- shadcn/ui style patterns
+- Lucide React icons
 
+## Project Structure
 
+```text
+voice-in-action-landing/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## Pages
+
+- `/` – Home landing page
+- `/about-us` – About Voice In Action
+- `/team` – Team and leadership information
+- `*` – Not found page fallback
+
+## Local Development
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js
+- npm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+The project will run in development mode and can be viewed locally in your browser.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+```bash
+npm run dev
+npm run build
+npm run build:dev
+npm run lint
+npm run preview
+```
+
+## Contact Information
+
+Voice In Action
+
+- Email: info.voiceinaction@gmail.com
+- Location: U10 Congo Hostel, Sompane Rd, Khutsong, Carletonville, South Africa
+- Phone/WhatsApp: Available via the contact section of the website
+- Operating hours: Monday - Friday, 08:00 AM - 04:30 PM
+
+## Contribution
+
+Contributions, suggestions, and improvements are welcome. This project is intended to support a community-focused mission and can be extended with new pages, content updates, or improved campaigning features.
+
+## License
+
+This project is currently distributed for organizational use and website development without a separate public license declaration in the repository.
+
+## Notes
+
+The website is tailored for a civic-facing organization focused on justice, accountability, transparency, and community advocacy. It reflects VIA’s mission to give residents a platform to raise concerns, demand action, and help rebuild trust in public institutions.
