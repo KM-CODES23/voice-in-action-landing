@@ -1,55 +1,56 @@
 # Voice In Action
 
-Voice In Action (VIA) is a civic advocacy and accountability website created for the Khutsong and Carletonville community. The site promotes transparency, service delivery accountability, anti-corruption advocacy, and public engagement through a clear and modern landing page experience.
-
-This project presents VIA as an independent, non-profit watchdog organization committed to investigating service delivery complaints, exposing corruption, protecting community rights, and promoting fairness, accountability, and administrative justice.
+Voice In Action (VIA) is a modern community advocacy and accountability landing website for residents of Khutsong and Carletonville. The platform is designed to communicate VIA’s mission, share its values, highlight key initiatives, and encourage public engagement around service delivery, anti-corruption action, and community protection.
 
 ## Overview
 
-The website is designed to:
+This project is a React + TypeScript website built to present VIA as an independent, non-profit watchdog organization focused on:
 
-- Introduce the Voice In Action mission and values
-- Explain how the organization investigates complaints and protects communities
-- Showcase key initiatives such as independent investigations, public exposure, mobilization, and school safety oversight
-- Highlight the organization’s impact in restoring accountability and trust
-- Encourage volunteers, supporters, and community members to get involved
-- Provide contact details and local outreach information
+- Investigating service delivery complaints
+- Exposing corruption and misconduct
+- Protecting community rights and accountability
+- Encouraging public participation and support
+- Building trust between residents and institutions
 
-## Key Sections
+## Mission
 
-The landing page includes:
+Voice In Action exists to provide an independent voice for justice and accountability in communities affected by poor service delivery and corruption. The organization works to ensure that residents can raise concerns, receive fair treatment, and push for meaningful reform.
 
-- Hero section with strong civic call-to-action messaging
-- About section explaining the mission, vision, and purpose of VIA
-- Initiatives section covering key community and accountability programs
-- Impact section highlighting how VIA turns complaints into solutions
-- Volunteer / get involved call-to-action section
-- Team page with leadership and volunteer structure information
-- About Us page with VIA’s values and organizational principles
-- Footer with contact details and location information
+## What the Website Includes
 
-## Mission and Purpose
+The site contains a clear landing-page experience and supporting pages that explain the organization’s purpose and work:
 
-Voice In Action exists to:
-
-- Investigate service delivery complaints
-- Expose corruption and misconduct
-- Protect the rights of residents and communities
-- Promote fairness, transparency, and accountability
-- Build public trust through evidence-based action
-- Support communities in accessing justice and responsible governance
+- Hero section with a strong advocacy message
+- About Us overview
+- Mission and vision explanation
+- Community-focused initiative highlights
+- Impact section showing how complaints become action
+- Volunteer and support call-to-action prompts
+- Team and leadership information
+- Contact details and local outreach information
 
 ## Core Values
 
-VIA is guided by:
+VIA is guided by the following principles:
 
 - Independence
 - Impartiality and fairness
 - Accessibility
 - Professionalism and accountability
-- Community protection and public trust
+- Community protection and transparency
 
-## Technologies Used
+## Key Work Areas
+
+The website communicates VIA’s strategic focus across several areas, including:
+
+- Independent investigations
+- Public exposure of corruption and service delivery failures
+- Community mobilization and advocacy
+- School safety and education-focused oversight
+- Human rights protection and accountability tracking
+- Support for administrative justice and fair governance
+
+## Technology Stack
 
 This project is built with:
 
@@ -58,7 +59,7 @@ This project is built with:
 - Vite
 - Tailwind CSS
 - React Router
-- shadcn/ui style patterns
+- shadcn/ui-inspired component structure
 - Lucide React icons
 
 ## Project Structure
@@ -80,7 +81,8 @@ voice-in-action-landing/
 ├── tailwind.config.ts
 ├── tsconfig.json
 ├── vite.config.ts
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ## Pages
@@ -88,13 +90,13 @@ voice-in-action-landing/
 - `/` – Home landing page
 - `/about-us` – About Voice In Action
 - `/team` – Team and leadership information
-- `*` – Not found page fallback
+- `*` – Fallback 404 page
 
 ## Local Development
 
 ### Prerequisites
 
-Make sure you have the following installed:
+Make sure you have the following installed on your machine:
 
 - Node.js
 - npm
@@ -105,13 +107,13 @@ Make sure you have the following installed:
 npm install
 ```
 
-### Start the development server
+### Run the app locally
 
 ```bash
 npm run dev
 ```
 
-The project will run in development mode and can be viewed locally in your browser.
+This starts the Vite development server, and the site can be opened in your browser.
 
 ### Build for production
 
@@ -119,7 +121,7 @@ The project will run in development mode and can be viewed locally in your brows
 npm run build
 ```
 
-### Preview production build
+### Preview the production build
 
 ```bash
 npm run preview
@@ -140,18 +142,20 @@ npm run preview
 Voice In Action
 
 - Email: info.voiceinaction@gmail.com
-- Location: U10 Congo Hostel, Sompane Rd, Khutsong, Carletonville, South Africa
-- Phone/WhatsApp: Available via the contact section of the website
-- Operating hours: Monday - Friday, 08:00 AM - 04:30 PM
+- Address: U10 Congo Hostel, Sompane Rd, Khutsong, Carletonville, South Africa
+- Phone/WhatsApp: available through the website contact section
+- Operating hours: Monday to Friday, 08:00 AM - 04:30 PM
 
 ## Contribution
 
-Contributions, suggestions, and improvements are welcome. This project is intended to support a community-focused mission and can be extended with new pages, content updates, or improved campaigning features.
+This project is intended to support a civic and public-interest mission. Contributions, improvements, and updates to messaging, design, or site structure are welcome.
 
-## License
+## Developer Note
 
-This project is currently distributed for organizational use and website development without a separate public license declaration in the repository.
+This repository contains the front-end website for VIA and is designed to help communicate the organization’s role in accountability, justice, and community advocacy in a clear and engaging way.
 
-## Notes
+## Credits
 
-The website is tailored for a civic-facing organization focused on justice, accountability, transparency, and community advocacy. It reflects VIA’s mission to give residents a platform to raise concerns, demand action, and help rebuild trust in public institutions.
+Created for Voice In Action.
+
+Made by KM-CODES.
